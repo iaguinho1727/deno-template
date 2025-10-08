@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: deno-project
+    build:
+      context: .
+    volumes:
+      - .:/app
+    ports:
+      - "$APP_PORT:$APP_PORT"
